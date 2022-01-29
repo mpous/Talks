@@ -13,9 +13,10 @@ Learn on this Workshop how to create a fleet of Edge Machine Learning devices us
 Bring your own Coral board or Raspberry Pi with Coral USB accelerator and let’s deploy a fleet together with balena.io
 
 
-### Talk Format
 
-Workshop > 60min
+### Talk format
+
+Workshop: 60min
 
 ### Audience Level
 
