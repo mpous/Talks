@@ -1,0 +1,35 @@
+name: Netdata
+type: sw.block
+description: >-
+  Troubleshoot slowdowns and anomalies in your infrastructure with thousands of per-second metrics, meaningful visualizations, and insightful health alarms with zero configuration.
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/OdysLam/netdatablock'
+  logo:
+    type: blob.asset
+    data:
+      url: 'https://raw.githubusercontent.com/OdysLam/NetdataBlock/main/logo.png'
+data:
+  defaultDeviceType: raspberrypi4-64
+  supportedDeviceTypes:
+    - generic-aarch64	
+    - raspberrypi3-64
+    - raspberrypi400-64
+    - raspberrypicm4-ioboard	
+    - intel-nuc	
+    - surface-pro-6
+    - surface-go
+    - generic
+    - genericx86-64-ext
+    - qemux86-64
+    - up-board
+    - raspberrypi3	
+    - raspberry-pi2	
+    - raspberry-pi	
+    - beaglebone-black	
+    - beaglebone-green
+    - jetson-nano	
+    - jetson-tx1
+    - jetson-tx2

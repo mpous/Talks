@@ -1,0 +1,31 @@
+name: Kerberos.io
+type: sw.application
+description: >-
+  Video surveillance and video analytics for people and enterprises making this world a safer and smarter place.
+joinable: false
+post-provisioning: >-
+  ## Usage instructions
+  
+  Fork this fleet and deploy the project on a balenaCloud application. Once the Kerberos Open Source agent is flashed onto your device, you should be able to access the welcome screen by browsing to it's IP address.
+  You can use your favourite browser.
+  
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/kerberos-io/kerberos-balena'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/kerberos-io/kerberos-balena/master/kerberosio-logo.png
+        
+data:
+  applicationEnvironmentVariables:
+  defaultDeviceType: "raspberrypi4-64"
+  supportedDeviceTypes:
+    - "raspberrypi3"
+    - "raspberrypi3-64"
+    - "raspberrypi4-64"
+    - "intel-nuc"
+    - "jetson-nano"

@@ -1,0 +1,48 @@
+version: '2.1'
+networks: {}
+  
+volumes:
+  netdatacache:
+  netdatalib:
+  config: {}
+  capture: {}
+  logs: {}
+  web: {}
+services:
+  netdata:
+    build: ./netdata
+    privileged: true
+    ports:
+      - '19999:19999'
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - apparmor:unconfined
+    labels:
+      io.balena.features.balena-socket: 1
+      io.balena.features.procfs: 1
+      io.balena.features.supervisor-api: 1
+      io.balena.features.sysfs: 1
+    volumes:
+      - netdatalib:/var/lib/netdata
+      - netdatacache:/var/cache/netdata
+  
+  kerberos:
+    build:
+      context: kerberos
+    privileged: true
+    tty: true
+    restart: always
+    network_mode: host
+    volumes:
+      - 'config:/etc/opt/kerberosio/config'
+      - 'capture:/etc/opt/kerberosio/capture'
+      - 'logs:/etc/opt/kerberosio/logs'
+      - 'web:/var/www/web/config'
+    labels:
+      io.balena.features.kernel-modules: '1'
+      io.balena.features.firmware: '1'
+      io.balena.features.dbus: '1'
+      io.balena.features.supervisor-api: '1'
+      io.balena.features.resin-api: '1'
+      io.balena.features.balena-socket: '1'
