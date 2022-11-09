@@ -2,7 +2,7 @@
 
 ## Conference
 
-ARM Dev Summit 2022 - Virtual [link]([https://www.thethingsnetwork.org/conference/ttc-events/building-your-own-private-lorawan-network-server-and-gateway/](https://devsummit.arm.com/flow/arm/devsummit22/home/page/lp)
+ARM Dev Summit 2022 - Virtual [link](https://devsummit.arm.com/flow/arm/devsummit22/home/page/lp)
 
 ## Location and Date
 
