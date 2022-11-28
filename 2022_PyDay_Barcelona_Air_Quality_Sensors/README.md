@@ -2,7 +2,7 @@
 
 ## Conference
 
-Python Barcelona Day 2022 - Barcelona [link]([https://www.thethingsnetwork.org/conference/ttc-events/building-your-own-private-lorawan-network-server-and-gateway/](https://pybcn.org/events/pyday_bcn/pyday_bcn_2022/))
+Python Barcelona Day 2022 [link](https://pybcn.org/events/pyday_bcn/pyday_bcn_2022/)
 
 ## Location and Date
 
