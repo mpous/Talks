@@ -16,9 +16,9 @@ Munich - 7th December 2023 - CodeCentric Munich offices
 
 * Focus on how critical are the software and Operating System updates for the IT and OT operations (why).
 * Apply  `continuous improvement` principles for your edge devices:
->* Enable software and OS updates (CI/CD)
->* Add new features
->* Manage devices as a fleet
->* Avoid lock-ins
+ * Enable software and OS updates (CI/CD)
+ * Add new features
+ * Manage devices as a fleet
+ * Avoid lock-ins
 
 ## Script
